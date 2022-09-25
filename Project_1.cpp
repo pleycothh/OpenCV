@@ -38,7 +38,7 @@ void findColor(Mat img)
 
 
 // virtural pointer
-void main()
+void main1()
 {
 
     VideoCapture cap(0);
