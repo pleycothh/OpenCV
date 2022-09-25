@@ -10,7 +10,7 @@ using namespace std;
 /// <summary>
 /// Importing Images
 /// </summary>
-void main() 
+void Image() 
 {
     string path = "Resources/test.png";
 
@@ -18,5 +18,21 @@ void main()
     Mat img = imread(path);
     imshow("Image", img);
     waitKey(0);
+
+}
+
+void video() 
+{
+   // string path = "Resources/test_video.mp4";
+    VideoCapture video (0);
+    Mat img;
+
+    while (true) {
+        video.read(img);
+        imshow("video", img);
+        waitKey(20);
+
+    }
+
 
 }

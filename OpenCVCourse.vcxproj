@@ -138,7 +138,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Chapter1.cpp" />
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="Chapter2.cpp" />
+    <ClCompile Include="Chapter3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
