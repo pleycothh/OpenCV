@@ -22,7 +22,7 @@ auto drow the missing part
 float w = 250, h = 350;
 Mat matrix, imgWarp;
 // warp
-void main()
+void warp()
 {
 
     string path = "Resources/cards.jpg";
