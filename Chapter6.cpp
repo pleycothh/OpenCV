@@ -26,7 +26,7 @@ int hmin = 0, smin = 110, vmin = 153;
 int  hmax = 19, smax = 240, vmax = 255;
 
 //Color detextion
-void main()
+void ColorDetection()
 {
     string path = "Resources/lambo.png";
     Mat img = imread(path);
