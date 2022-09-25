@@ -89,7 +89,7 @@ void getContours(Mat imgDil, Mat img)
 
 
 // Detct Shapes/ contour detion
-void main()
+void Shap()
 {
     string path = "Resources/shapes.png";
     Mat img = imread(path);
