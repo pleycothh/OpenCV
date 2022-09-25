@@ -21,17 +21,19 @@ auto drow the missing part
 */
 
 
-Mat imgHSV,mask;
-int hmin = 0, smin = 110, vmin = 153;
-int  hmax = 19, smax = 240, vmax = 255;
+Mat imgHSV, mask;
+int hmin = 0, smin = 0, vmin = 0;
+int  hmax = 255, smax = 255, vmax = 255;
+
+VideoCapture cap(0);
+Mat img;
 
 //Color detextion
-void ColorDetection()
+void main2()
 {
-    string path = "Resources/lambo.png";
-    Mat img = imread(path);
+    //string path = "Resources/lambo.png";
+    
 
-    cvtColor(img, imgHSV, COLOR_BGR2HSV);
 
     namedWindow("Trackbars", (640, 200));
     // create trackbar called hum min, insted the window trackbars, with hmin as reference value, as start point.
@@ -44,11 +46,15 @@ void ColorDetection()
 
 
 
-    while (true) 
+    while (true)
     {
+        cap.read(img);
+        
+        cvtColor(img, imgHSV, COLOR_BGR2HSV);
+
         Scalar lower(hmin, smin, vmin);
         Scalar upper(hmax, smax, vmax);
-        
+
         inRange(imgHSV, lower, upper, mask);
 
         //imshow("Image", img);

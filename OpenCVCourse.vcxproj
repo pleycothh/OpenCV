@@ -142,9 +142,11 @@
     <ClCompile Include="Chapter3.cpp" />
     <ClCompile Include="Chapter4.cpp" />
     <ClCompile Include="Chapter5.cpp" />
-    <ClCompile Include="Chapter6.cpp" />
     <ClCompile Include="Chapter7.cpp" />
     <ClCompile Include="Chapter8.cpp" />
+    <ClCompile Include="ColorPicker.cpp" />
+    <ClCompile Include="Project_1.cpp" />
+    <ClCompile Include="Project_3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

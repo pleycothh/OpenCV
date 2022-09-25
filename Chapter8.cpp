@@ -26,7 +26,7 @@ AI remove object from picture:
 auto drow the missing part
 */
 
-void main()
+void face()
 {
     string path = "Resources/test.png";
     Mat img = imread(path);

@@ -30,13 +30,19 @@
     <ClCompile Include="Chapter5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Chapter7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Chapter8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Project_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorPicker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Project_3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
