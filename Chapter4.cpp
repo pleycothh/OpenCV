@@ -18,21 +18,10 @@ using namespace std;
 // resize
 void mian()
 {
-    string path = "Resources/test.png";
-    Mat img = imread(path);
-    Mat imgResize, imgCrop;
+    // 8 bit is 0-255 pix
+    Mat img(512, 512, CV_8UC3, Scalar(255, 0, 0));
 
-    //cout << img.size()<<endl;
-    //resize(img, imgResize, Size(640,480));
-    resize(img, imgResize, Size(), 0.5, 0.5);
-
-
-    // rec, start point is 100, 100, then go 300 right, 250 downward
-    Rect roi(100, 100, 300, 250);
-    imgCrop = img(roi);
-
-
-    imshow("Image", imgCrop);
+    imshow("Image", img);
 
     waitKey(0);
 }
