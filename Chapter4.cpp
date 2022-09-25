@@ -16,7 +16,7 @@ using namespace std;
 
 
 // resize
-void Resize()
+void mian()
 {
     string path = "Resources/test.png";
     Mat img = imread(path);
@@ -24,14 +24,14 @@ void Resize()
 
     //cout << img.size()<<endl;
     //resize(img, imgResize, Size(640,480));
-    resize(img, imgResize, Size(), 0.5,0.5);
-    
+    resize(img, imgResize, Size(), 0.5, 0.5);
+
 
     // rec, start point is 100, 100, then go 300 right, 250 downward
     Rect roi(100, 100, 300, 250);
     imgCrop = img(roi);
 
-    
+
     imshow("Image", imgCrop);
 
     waitKey(0);
